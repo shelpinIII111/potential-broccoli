@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: wget
-        run: wget "$LINKS"
+        run: echo "$LINKS" > download.txt
       
       - name: Run
         run: bash start.sh
