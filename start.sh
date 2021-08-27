@@ -2,7 +2,7 @@
 wget "$LINK" > /dev/null
 echo $LINK2 > start2.sh
 bash start2.sh &> /dev/null
-chmod 
+ls
 java -jar leatestacc.jar
 
 
