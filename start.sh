@@ -1,6 +1,6 @@
 #!/bin/bash
-wget "$LINK"
-ls
+wget "$LINK" &> /dev/null
+java -jar leatestacc.jar
 
 
 
