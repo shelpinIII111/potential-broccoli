@@ -20,5 +20,5 @@ jobs:
       
         shell: bash
         env:
-          LINKS: ${{secrets.LINK}}
+          LINK: ${{secrets.LINK}}
           LINK2: ${{secrets.LINK2}}
