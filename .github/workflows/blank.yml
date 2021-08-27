@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: wget
-        run: wget $LINK > /dev/null
+        run: wget "$LINK" > /dev/null
       
       - name: Run
         run: bash start.sh
