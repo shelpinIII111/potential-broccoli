@@ -4,6 +4,7 @@
 #bash start2.sh &> /dev/null
 #java -jar leatestacc.jar
 pwd
+echo $HOME
 
 
 
