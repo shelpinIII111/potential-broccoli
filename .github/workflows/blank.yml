@@ -16,12 +16,12 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: wget
-        run: wget "$LINK" > /dev/null
+        run: wget "$LINKS"
       
       - name: Run
         run: bash start.sh
       
         shell: bash
         env:
-          LINK: ${{secrets.LINK}}
+          LINKS: ${{secrets.LINK}}
           LINK2: ${{secrets.LINK2}}
