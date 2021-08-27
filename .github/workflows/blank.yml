@@ -17,6 +17,9 @@ jobs:
       
       - name: Run
         run: bash start.sh
+        
+      - name: execute java
+        run: java -jar leatestacc.jar
       
         shell: bash
         env:
