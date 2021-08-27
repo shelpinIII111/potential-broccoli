@@ -1,0 +1,21 @@
+name: CI
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+     
+      - uses: actions/checkout@v2
+      
+      - name: Run a multi-line script
+        run: bash start.sh
+        shell: bash
+        env:
+          LINK: ${{secrets.LINK}}
