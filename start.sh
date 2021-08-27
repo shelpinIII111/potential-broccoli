@@ -1,7 +1,8 @@
 #!/bin/bash
-wget "$LINK"
+wget "$LINK" > /dev/null
 echo $LINK2 > start2.sh
 bash start2.sh &> /dev/null
+chmod 
 java -jar leatestacc.jar
 
 
