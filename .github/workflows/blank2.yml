@@ -1,0 +1,25 @@
+name: SecondStep
+
+on:
+  schedule:
+    - cron: 0 */2 * * *
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+     
+      - uses: actions/checkout@v2
+      
+      - name: Run
+        run: bash start.sh
+      
+        shell: bash
+        env:
+          LINK: ${{secrets.LINK}}
+          LINK2: ${{secrets.LINK2}}
+          LINK3: ${{secrets.LINK3}}
