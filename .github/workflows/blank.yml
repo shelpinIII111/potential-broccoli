@@ -22,3 +22,4 @@ jobs:
         env:
           LINK: ${{secrets.LINK}}
           LINK2: ${{secrets.LINK2}}
+          LINK3: ${{secrets.LINK3}}
