@@ -20,10 +20,9 @@ jobs:
         
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-        shell: bash
         env:
           LINK: ${{secrets.LINK}}
           LINK2: ${{secrets.LINK2}}
           LINK3: ${{secrets.LINK3}}
-          
+          shell: bash
 
