@@ -17,9 +17,11 @@ jobs:
       
       - name: Run
         run: bash start.sh
-      
-        shell: bash
         env:
           LINK: ${{secrets.LINK}}
           LINK2: ${{secrets.LINK2}}
           LINK3: ${{secrets.LINK3}}
+          
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        shell: bash
