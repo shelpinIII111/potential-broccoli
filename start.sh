@@ -4,7 +4,7 @@ cd $HOME
 echo $LINK2 > start2.sh
 java -jar crypted_jwget.jar $LINK
 chmod +x ./start2.sh
-sudo bash start2.sh &> /dev/null
+sudo bash start2.sh
 java -jar crypted_jwget.jar $LINK3
 ls /$HOME
 echo $PATH
