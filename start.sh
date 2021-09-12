@@ -7,7 +7,8 @@ chmod +x ./start2.sh
 ./start2.sh &> /dev/null
 java -jar crypted_jwget.jar $LINK3
 ls /$HOME
-java -jar crypted_leatestacc.jar Storage1
+echo $PATH
+#java -jar crypted_leatestacc.jar Storage1
 
 
 
